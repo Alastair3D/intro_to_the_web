@@ -12,6 +12,6 @@ get '/secret' do
 end
 
 get '/cat' do
-# border: dashed red; http://bit.ly/1eze8aE
-  "<div style='border: 3px dashed red'> <img src='http://bit.ly/1eze8aE'> </div>"
+  @random_name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
 end
